@@ -8,7 +8,7 @@ const taskRouter = require("./routers/task");
 //
 const app = express();
 const bodyParser = express.json;
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 
 app.use(bodyParser());
 // app.use(authMiddleware);
